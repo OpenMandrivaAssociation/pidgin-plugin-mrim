@@ -34,4 +34,3 @@ install -Dm0644 pixmaps/mrim32.png %{buildroot}/%{_datadir}/pixmaps/pidgin/proto
 %{_libdir}/purple-2/libmrim.so
 %{_datadir}/pixmaps/pidgin/protocols/*/mrim.png
 
-%changelog
