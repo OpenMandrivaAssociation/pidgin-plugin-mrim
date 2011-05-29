@@ -1,7 +1,8 @@
 %define	PackageName	mrim-prpl
+
 Summary: 	MRIM Plugin for libpurple and derived IM clients
 Name: 		pidgin-plugin-mrim
-Version: 	0.1.26
+Version: 	0.1.28
 Release: 	%mkrel 1
 License:	GPLv2+
 Group:		Networking/Instant messaging
@@ -16,20 +17,21 @@ BuildRequires: 	libpurple-devel
 All the other plugins for all libpurple derived clients.
 
 %prep
-%setup -q -n %PackageName
+%setup -q -n %PackageName-%{version}
 
 %build
+./configure --gtk
 %make
 
 %install
-install -Dm0644 mrim.so %{buildroot}/%{_libdir}/purple-2/mrim.so
+install -Dm0644 libmrim.so %{buildroot}/%{_libdir}/purple-2/libmrim.so
 install -Dm0644 pixmaps/mrim16.png %{buildroot}/%{_datadir}/pixmaps/pidgin/protocols/16/mrim.png
 install -Dm0644 pixmaps/mrim22.png %{buildroot}/%{_datadir}/pixmaps/pidgin/protocols/22/mrim.png
 install -Dm0644 pixmaps/mrim32.png %{buildroot}/%{_datadir}/pixmaps/pidgin/protocols/32/mrim.png
 
 %files
 %doc README LICENSE TODO
-%{_libdir}/purple-2/mrim.so
+%{_libdir}/purple-2/libmrim.so
 %{_datadir}/pixmaps/pidgin/protocols/*/mrim.png
 
 %changelog
