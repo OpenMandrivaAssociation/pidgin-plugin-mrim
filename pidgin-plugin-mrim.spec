@@ -10,8 +10,12 @@ Url:		http://code.google.com/p/mrim-prpl/
 Source0:	http://mrim-prpl.googlecode.com/files/mrim-prpl-%{version}.tar.gz
 BuildRoot:	%{_tmppath}/%{name}_%{version}-build
 
+#BuildRequires:	libpurple-devel
+%ifarch x86_64
+BuildRequires:	lib64purple-devel
+%else
 BuildRequires:	libpurple-devel
-
+%endif
 
 %description
 All the other plugins for all libpurple derived clients.
