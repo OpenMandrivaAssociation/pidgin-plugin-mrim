@@ -1,4 +1,5 @@
 %define	PackageName	mrim-prpl
+%define debug_package %{nil}
 
 Summary:	MRIM Plugin for libpurple and derived IM clients
 Name:		pidgin-plugin-mrim
