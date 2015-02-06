@@ -4,7 +4,7 @@
 Summary:	MRIM Plugin for libpurple and derived IM clients
 Name:		pidgin-plugin-mrim
 Version:	0.1.28
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		Networking/Instant messaging
 Url:		http://code.google.com/p/mrim-prpl/
