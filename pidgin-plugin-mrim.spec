@@ -7,7 +7,7 @@ Version:	0.1.28
 Release:	3
 License:	GPLv2+
 Group:		Networking/Instant messaging
-Url:		http://code.google.com/p/mrim-prpl/
+Url:		https://code.google.com/p/mrim-prpl/
 Source0:	http://mrim-prpl.googlecode.com/files/mrim-prpl-%{version}.tar.gz
 
 BuildRequires:	pkgconfig(purple)
