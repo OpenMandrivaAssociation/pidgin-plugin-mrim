@@ -10,6 +10,11 @@ Group:		Networking/Instant messaging
 Url:		https://code.google.com/p/mrim-prpl/
 Source0:	http://mrim-prpl.googlecode.com/files/mrim-prpl-%{version}.tar.gz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(purple)
 
 %description
